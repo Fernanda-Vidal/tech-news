@@ -560,7 +560,7 @@ local: `tech_news/scraper.py`
 
 Agora, chegou a hora de aplicar todas as funções que você acabou de fazer. Com estas ferramentas prontas, podemos fazer nosso scraper mais robusto com a paginação.
 
-* A função deve receber como parâmetro um número inteiro `n` e buscar as últimas `n` notícias do site.
+* A função deve receber como parâmetro um número inteiro `amount` e buscar as `amount` notícias mais recentes do site.
 * Utilize as funções `fetch`, `scrape_updates`, `scrape_next_page_link` e `scrape_news` para buscar as notícias e processar seu conteúdo.
 * As notícias buscadas devem ser inseridas no MongoDB; Para acessar o banco de dados, importe e utilize as funções que já temos prontas em `tech_news/database.py`
 * Após inserir as notícias no banco, a função deve retornar estas mesmas notícias.
