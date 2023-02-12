@@ -1,5 +1,6 @@
 from typing import Any, Dict, List
 from tech_news.database import find_news
+# Iniciando projeto
 
 
 class ReadingPlanService:
