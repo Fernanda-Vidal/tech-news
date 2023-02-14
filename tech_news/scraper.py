@@ -36,7 +36,7 @@ def scrape_news(html_content):
     timestamp = select.css("li.meta-date::text").get().strip()
     writer = select.css("span.author > a ::text").get().strip()
     reading_time = select.css("li.meta-reading-time::text")
-    summary = select.css("div.entry-content > p:first-of-type *::text").getall()
+    summary = select.css(".entry-content > p:first-of-type *::text").getall()
     category = select.css("span.label::text").get().strip()
 
     return {
