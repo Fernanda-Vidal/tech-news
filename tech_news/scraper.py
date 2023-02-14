@@ -39,18 +39,17 @@ def scrape_news(html_content):
     summary = select.css("div.entry-content > p:first-of-type *::text").getall()
     category = select.css("span.label::text").get().strip()
 
-
     return {
-    "url": url,
-    "title": title,
-    "timestamp": timestamp,
-    "writer": writer,
-    "reading_time": int(reading_time.re_first(r"\d+")),
-    "summary": "".join(summary).strip(),
-    "category": category
+        "url": url,
+        "title": title,
+        "timestamp": timestamp,
+        "writer": writer,
+        "reading_time": int(reading_time.re_first(r"\d+")),
+        "summary": "".join(summary).strip(),
+        "category": category
     }
 
 
 # Requisito 5
 def get_tech_news(amount):
-  ...
+    ...
