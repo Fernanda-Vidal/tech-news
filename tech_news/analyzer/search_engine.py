@@ -17,16 +17,16 @@ def search_by_title(title):
 # Requisito 8
 def search_by_date(date):
     list_search = []
-    
-    try: 
-        date_fomatted = datetime.strptime(date, "%Y-%m-%d").strftime("%d/%m/%Y")
-        search = search_news({"timestamp": {"$regex": date_fomatted}})
+
+    try:
+        fomatted = datetime.strptime(date, "%Y-%m-%d").strftime("%d/%m/%Y")
+        search = search_news({"timestamp": {"$regex": fomatted}})
         for index in search:
             new = (index["title"], index["url"])
             list_search.append(new)
     except ValueError:
         raise ValueError("Data inválida")
-    
+
     else:
         return list_search
 
