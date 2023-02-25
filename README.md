@@ -13,7 +13,7 @@ O principal objetivo deste projeto foi fazer consultas em notícias sobre tecnol
 ## Desenvolvimento 
 
 <div align="justify">
-Neste projeto tivemos que obter notícias através de raspagem de dados no [_blog da Trybe_](https://blog.betrybe.com).
+Neste projeto tivemos que obter notícias através de raspagem de dados no [Blog da Trybe](https://blog.betrybe.com).
 </div>
 
 ## Habilidades trabalhadas
